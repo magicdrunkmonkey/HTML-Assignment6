@@ -3,9 +3,64 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Login page</title>
 </head>
 <body>
+    <header>
+        <!--
+        • Header element that is containing the following
+            o Headline element of biggest size with the page name or a logo image.
+            o Navigation element containing following
+                ▪ Unordered list element with at least 3 list items.
+                    • One hyperlink element per list item.
+            o Hyperlink element to a page with a back to index page.
+        -->
+        <h1>Min första hemsida!</h1>    <!-- Detta borde vara header, fanns storleken h1 upp till h6 där h1 var störst. -->
+        <nav>
+            <ul>
+                <li>Växter       <a href>Link 1</a></li>
+                <li>Plantering   <a href>Link 2</a></li>
+                <li>Kompostering <a href>Link 3</a></li>
+            </ul>
+        </nav>
+        <a href="C:\VisualStudioProject\Lexicon\Assignment6HTML\index.html">index.html</a>
+    </header>
+    <main>
+        <!--
+           • A container element for the main content of the page that is containing the following
+               o Headline element with text Login.
+               o Form element.
+                   ▪ Element appropriate for typing in the username.
+                   ▪ Element appropriate for typing in the password.
+                   ▪ Element appropriate for resetting the form.
+                   ▪ Element appropriate for signing in with the form data.
+        -->
+        <h2>User Login</h2>
+        <form>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username">
 
+            <label for="password">Password: </label>
+            <input type="text" id="password" name="password">
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Sign in">
+        </form>
+
+        <!--Attempt 1, felaktigt sätt att göra "reset" och "signing in"
+            <label for="reset">Reset</label>
+            <input type="text" id="reset" name="reset">
+
+            <label for="signIn">Signing in: </label>
+            <input type="text" id="signIn" name="signIn">
+        -->
+    </main>
+    <!--
+        • A footer element that is containing the following
+            o Span element with html code for a copyright glyph and your name.
+            -->
+    <footer>
+        <span>&#169;George Sydby</span>  <!--&#169; hittades genom sökning på CSS copyright code. https://www.rapidtables.com/web/html/html-codes/html-code-copyright.html  -->
+    </footer>
 </body>
 </html>
